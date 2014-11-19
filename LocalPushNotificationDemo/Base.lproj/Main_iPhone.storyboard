@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="CAViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1J-Si-3Ny">
+                                <rect key="frame" x="60" y="80" width="200" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Cls-IG-sQj"/>
+                                    <constraint firstAttribute="height" constant="36" id="ayI-Nh-Jjt"/>
+                                </constraints>
+                                <state key="normal" title="[Test1] 10s后本地推送">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="localPushNotificationTest01:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kq5-Ud-1rR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg7-qa-vIA">
+                                <rect key="frame" x="60" y="124" width="200" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ih5-36-VCZ"/>
+                                    <constraint firstAttribute="height" constant="36" id="x0m-mp-KIU"/>
+                                </constraints>
+                                <state key="normal" title="[Test2] 基于日历的推送">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="localPushNotificationTest02:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vnN-25-w9C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmb-P2-NWX">
+                                <rect key="frame" x="60" y="168" width="200" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.3803921569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="AHM-iY-Yoy"/>
+                                    <constraint firstAttribute="width" constant="200" id="CIQ-dv-KC7"/>
+                                </constraints>
+                                <state key="normal" title="[Test3] 立刻呈现">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="localPushNotificationTest03:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bof-fA-Qbt"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kag-mO-yje">
+                                <rect key="frame" x="0.0" y="373" width="325" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="XzW-du-WlE"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zg7-qa-vIA" firstAttribute="width" secondItem="rmb-P2-NWX" secondAttribute="width" id="1kT-rl-O6U"/>
+                            <constraint firstItem="Zg7-qa-vIA" firstAttribute="centerX" secondItem="rmb-P2-NWX" secondAttribute="centerX" id="1rs-Gp-Uuj"/>
+                            <constraint firstAttribute="width" secondItem="Kag-mO-yje" secondAttribute="width" constant="-5" id="42o-oQ-1Ru"/>
+                            <constraint firstAttribute="centerX" secondItem="h1J-Si-3Ny" secondAttribute="centerX" id="4Ph-Pn-g8I"/>
+                            <constraint firstItem="Zg7-qa-vIA" firstAttribute="height" secondItem="rmb-P2-NWX" secondAttribute="height" id="6bJ-Yh-WMf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Kag-mO-yje" secondAttribute="bottom" id="LLa-DD-gLe"/>
+                            <constraint firstItem="rmb-P2-NWX" firstAttribute="top" secondItem="Zg7-qa-vIA" secondAttribute="bottom" constant="8" id="M9Z-2V-QFn"/>
+                            <constraint firstAttribute="centerX" secondItem="Zg7-qa-vIA" secondAttribute="centerX" id="Mu4-pt-Mc8"/>
+                            <constraint firstAttribute="centerX" secondItem="Kag-mO-yje" secondAttribute="centerX" constant="-2.5" id="aJ0-UK-U34"/>
+                            <constraint firstItem="Zg7-qa-vIA" firstAttribute="top" secondItem="h1J-Si-3Ny" secondAttribute="bottom" constant="8" id="rPg-5T-39R"/>
+                            <constraint firstItem="h1J-Si-3Ny" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="x8v-2W-Cm6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoTextView" destination="Kag-mO-yje" id="2BR-D4-tCy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-117" y="17"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
